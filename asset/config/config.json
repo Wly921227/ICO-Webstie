@@ -1,0 +1,14 @@
+{
+  "dev": {
+    "domain": "",
+    "test": 1
+  },
+  "offline": {
+    "domain": "",
+    "test": 1
+  },
+  "online": {
+    "domain": "",
+    "test": 1
+  }
+}
