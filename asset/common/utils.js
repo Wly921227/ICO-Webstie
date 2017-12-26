@@ -5,7 +5,7 @@ const ua = typeof window === 'undefined'
     : navigator.userAgent.toLowerCase()
 const isAndroid = ua.indexOf('android') > -1 || ua.indexOf('adr') > -1
 
-export default {
+const utils = {
     isAndroid,
     dataParams (data) {
         data = data || {}
@@ -73,7 +73,7 @@ export default {
         if (window.innerWidth > 450 && time <= 4) {
             setTimeout(() => {
                 time++
-                this.setFontSize(planSize, grid, time)
+                utils.setFontSize(planSize, grid, time)
             }, 500)
         } else {
             const defaultWidth = planSize || 750                           // 设计图宽度
@@ -113,10 +113,32 @@ export default {
         }
     },
     getLanguage (loc, page) {
+        let lan = {}
         try {
-            return require(`../language/${loc}/${page}`)
+            lan = require(`../language/${loc}`)
         } catch (e) {
-            return require(`../language/${constants.defaultLoc}/${page}`)
+            lan = require(`../language/${constants.defaultLoc}`)
         }
+        const language = {
+            [page]: lan[page],
+            header: lan['header'],
+            footer: lan['footer']
+        }
+        console.log('language', language)
+        return language
+    },
+    renderPage (page, req, res) {
+        const loc = req.params.loc ? req.params.loc : utils.getLocCode(req)
+
+        const language = utils.getLanguage(loc, page)
+
+        res.render('components/layout', {
+            language,
+            page,
+            loc
+        })
+        res.end()
     }
 }
+
+export default utils

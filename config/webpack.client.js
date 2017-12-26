@@ -20,7 +20,9 @@ let config = {
         vendor: [
             'jquery'
         ],
-        login: getDevEntry('./pages/login')
+        register: getDevEntry('./pages/register'),
+        login: getDevEntry('./pages/login'),
+        home: getDevEntry('./pages/home')
     },
     output: {
         path: path.resolve(__dirname, '../static/public'),
@@ -64,7 +66,9 @@ if (process.env.NODE_ENV === 'production') {
             vendor: [
                 'jquery'
             ],
-            login: './pages/login'
+            register: ('./pages/register'),
+            login: ('./pages/login'),
+            home: ('./pages/home')
         },
         output: {
             path: path.resolve(__dirname, `../dist/ico/public`),

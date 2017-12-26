@@ -48,7 +48,11 @@ app.use((req, res, next) => {
 
 // routers
 import login from '../routers/login'
+import register from '../routers/register'
+import home from '../routers/home'
 
-app.use('/auth', login)
+app.use('/', login)
+app.use('/', register)
+app.use('/', home)
 
 module.exports = app

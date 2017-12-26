@@ -19,6 +19,27 @@ const getHtmlPlugin = entry => {
     })
 }
 
+const getComponentPlugin = entry => {
+    return new HtmlWebpackPlugin({
+        filename: `../views/components/${entry}.ejs`,
+        template: `./components/${entry}/index.tpl.ejs`,
+        inject: 'none',
+        minify: {
+            removeComments: true,
+            collapseWhitespace: true,
+            removeAttributeQuotes: true
+        },
+        excludeAssets: [
+            new RegExp(`.(js|css)$`)
+        ]
+    })
+}
+
 module.exports = [
-    getHtmlPlugin('login')
+    getComponentPlugin('layout'),
+    getComponentPlugin('header'),
+    getComponentPlugin('footer'),
+    getHtmlPlugin('register'),
+    getHtmlPlugin('login'),
+    getHtmlPlugin('home')
 ]
