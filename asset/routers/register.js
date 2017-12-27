@@ -1,6 +1,6 @@
 import { Router } from 'express'
 import { logger } from '../common/logger4'
-import { renderPage } from '../common/utils'
+import { renderPage } from '../common/tools'
 
 const registerRouter = new Router()
 const log = logger('register')

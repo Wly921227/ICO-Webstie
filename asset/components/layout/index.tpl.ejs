@@ -9,9 +9,9 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="keywords" content="">
 </head>
-<body ontouchstart="">
-<%- include('header', {language: language['header']}) %>
-<%- include('../' + page, {language: language[page]}) %>
-<%- include('footer', {language: language['footer']}) %>
+<body ontouchstart="" class="<%- loc %>">
+<%- include('header', {loc: loc, language: language['header'], images: images['header']}) %>
+<%- include('footer', {loc: loc, language: language['footer'], images: images['footer']}) %>
+<%- include('../' + page, {loc: loc, language: language[page], images: images[page]}) %>
 </body>
 </html>

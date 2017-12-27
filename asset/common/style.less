@@ -1,5 +1,39 @@
+/* PC page width 896 */
+body {
+  flex-direction: column;
+  display: flex;
+  header {
+    box-sizing: border-box;
+    padding: 0 6.25%;
+    flex: 0 0 64px;
+    order: 1;
+  }
+  .main {
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    order: 2;
+  }
+  footer {
+    box-sizing: border-box;
+    padding: 0 6.25%;
+    flex: 0 0 10%;
+    order: 3;
+  }
+  [class^="warp-"] {
+    max-width: 1200px;
+    min-width: 896px;
+    margin: 0 auto;
+  }
+  .text {
+    user-select: none;
+  }
+  img {
+    user-select: none;
+  }
+}
+
 html {
-  font-family: "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "mircro-soft yahei", "Myriad Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 html, body {
@@ -36,7 +70,7 @@ ul {
 
 a {
   text-decoration: inherit;
-  cursor: inherit;
+  cursor: pointer;
   color: inherit;
 }
 
