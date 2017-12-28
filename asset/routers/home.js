@@ -11,6 +11,7 @@ import playIcon from '../common/images/home/play-icon.png'
 import binanceImg from '../common/images/resource/binance.png'
 import videoImg from '../common/images/resource/video-cover.png'
 import coverageImg from '../common/images/resource/coverage.png'
+import userImageImg from '../common/images/resource/user-image.png'
 
 const homeRouter = new Router()
 const log = logger('home')
@@ -21,7 +22,8 @@ const images = {
     // resource
     coverageImg,
     binanceImg,
-    videoImg
+    videoImg,
+    userImageImg
 
 }
 
