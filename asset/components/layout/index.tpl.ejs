@@ -10,8 +10,8 @@
     <meta name="keywords" content="">
 </head>
 <body ontouchstart="" class="<%- loc %>">
-<%- include('header', {loc: loc, language: language['header'], images: images['header']}) %>
-<%- include('footer', {loc: loc, language: language['footer'], images: images['footer']}) %>
-<%- include('../' + page, {loc: loc, language: language[page], images: images[page]}) %>
+<%- include('header', {loc: loc, global: language.global, language: language['header'], images: images['header']}) %>
+<%- include('footer', {loc: loc, global: language.global, language: language['footer'], images: images['footer']}) %>
+<%- include('../' + page, {loc: loc, global: language.global, language: language[page], images: images[page]}) %>
 </body>
 </html>

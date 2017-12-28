@@ -20,8 +20,7 @@ let config = {
         vendor: [
             'jquery'
         ],
-        register: getDevEntry('./pages/register'),
-        login: getDevEntry('./pages/login'),
+        auth: getDevEntry('./pages/auth'),
         home: getDevEntry('./pages/home')
     },
     output: {
@@ -66,8 +65,7 @@ if (process.env.NODE_ENV === 'production') {
             vendor: [
                 'jquery'
             ],
-            register: ('./pages/register'),
-            login: ('./pages/login'),
+            auth: ('./pages/auth'),
             home: ('./pages/home')
         },
         output: {

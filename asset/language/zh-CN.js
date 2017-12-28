@@ -1,11 +1,14 @@
+import country from './country_zh'
+
 export default {
-    login: {
-        title: '登录',
-        submit: '提交'
+    global: {
+        country
     },
-    register: {
-        title: '注册',
-        submit: '提交'
+    auth: {
+        title: '用户验证',
+        next: '下一步',
+        statement: 'By clicking ‘get started’, you agree to YeeCall’s',
+        terms: 'Term of Use and Privacy Policy.'
     },
     home: {
         title: '首页',

@@ -24,7 +24,6 @@ const images = {
     binanceImg,
     videoImg,
     userImageImg
-
 }
 
 homeRouter.get('/home', async (req, res) => {

@@ -1,11 +1,14 @@
+import country from './country_en'
+
 export default {
-    login: {
-        title: 'login',
-        submit: 'submit'
+    global: {
+        country
     },
-    register: {
-        title: 'register',
-        submit: 'submit'
+    auth: {
+        title: 'auth',
+        next: 'NEXT',
+        statement: 'By clicking ‘get started’, you agree to YeeCall’s',
+        terms: 'Term of Use and Privacy Policy.'
     },
     home: {
         title: 'Home Page',
@@ -27,7 +30,6 @@ export default {
         sectionTitle10: 'YEE partners & collaborators',
         sectionTitle11: 'YEE partners & collaborators',
         whatIsYee: 'CyberMiles ("CM") is the blockchain technology being developed by 5xlab, a blockchain development laboratory. 5xlab is working closely with 5miles, a leading c2c marketplace operator with more than 12 million users in the US.  5miles is expected to be the first platform to utilize CyberMiles’ blockchain protocol, and will also assist 5xlab to develop the technology. Over the last 3 years of leading innovation in online & local marketplaces, 5miles has accumulated the necessary technical and commercial know-how to tailor blockchain technology & smart-contracts for real-world applications. 5xlab seeks to use this expertise to develop CyberMiles, with focus on trust and compliance. This will enable it to be a mainstream blockchain technology for real-world businesses. '
-
     },
     // 组件
     header: {

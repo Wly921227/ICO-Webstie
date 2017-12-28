@@ -55,7 +55,6 @@ module.exports = [
     getLayoutPlugin('layout'),
     getComponentPlugin('header'),
     getComponentPlugin('footer'),
-    getHtmlPlugin('register'),
-    getHtmlPlugin('login'),
+    getHtmlPlugin('auth'),
     getHtmlPlugin('home')
 ]

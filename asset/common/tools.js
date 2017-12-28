@@ -42,7 +42,8 @@ const tools = {
         return {
             [page]: lan[page],
             header: lan['header'],
-            footer: lan['footer']
+            footer: lan['footer'],
+            global: lan['global']
         }
     },
     renderPage (page, req, res, data) {
@@ -67,6 +68,8 @@ const tools = {
         if (data) {
             renderData.data = data
         }
+
+        console.log('============== renderData ==============', renderData)
 
         res.render('components/layout', renderData)
         res.end()
