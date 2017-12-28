@@ -61,17 +61,192 @@
       }
     }
     .action {
+      box-sizing: border-box;
       margin-top: 43px;
+      padding: 0 9%;
+      display: flex;
       .btn {
-        background-color: #ffca28;
+        background-color: #fff;
         display: inline-block;
         white-space: nowrap;
         line-height: 64px;
         font-size: 16px;
         cursor: pointer;
         color: #262626;
+        flex: 1 1 auto;
+        margin: 0 8px;
         width: 340px;
+        &.buy {
+          background-color: #ffca28;
+        }
       }
+    }
+  }
+  .section-2 {
+    .exchanges-list {
+      box-sizing: border-box;
+      margin-top: 46px;
+      padding: 0 8%;
+      padding-bottom: 70px;
+      ul {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        display: flex;
+        .exchanges-item {
+          justify-content: center;
+          box-sizing: border-box;
+          align-items: center;
+          flex: 0 0 33.3%;
+          padding: 0 40px;
+          height: 100px;
+          display: flex;
+          img {
+            height: auto;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+  .section-3 {
+    background-color: #f0f1f5;
+    padding-bottom: 96px;
+    .video-list {
+      box-sizing: border-box;
+      margin-top: 20px;
+      padding: 0 10%;
+    }
+    .video-line {
+      margin-top: 45px;
+      display: flex;
+      .video-item {
+        box-sizing: border-box;
+        padding: 0 20px;
+        flex: 0 0 50%;
+        .video {
+          position: relative;
+          cursor: pointer;
+          .cover {
+            background-color: #000;
+            width: 100%;
+            img {
+              opacity: .6;
+            }
+          }
+          .play-icon {
+            transform: translate(-50%, -50%);
+            position: absolute;
+            height: auto;
+            width: 32px;
+            left: 50%;
+            top: 50%;
+          }
+        }
+        .video-title {
+          margin-top: 25px;
+          font-size: 22px;
+          color: #262626;
+        }
+        .video-info {
+          margin-top: 5px;
+          font-size: 18px;
+          color: #808080;
+        }
+      }
+    }
+  }
+  .section-4 {
+    padding-bottom: 80px;
+    .coverage-list {
+      box-sizing: border-box;
+      margin-top: 40px;
+      padding: 0 10%;
+      ul {
+        flex-wrap: wrap;
+        display: flex;
+        .coverage-item {
+          flex: 0 0 auto;
+          height: 80px;
+          .coverage {
+            box-sizing: border-box;
+            padding: 20px;
+          }
+          img {
+            height: 100%;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+  .section-5 {
+    background-color: #f0f1f5;
+    padding-bottom: 100px;
+    .video-list {
+      margin-top: 5px;
+      padding: 0 10%;
+      .video-item {
+        box-sizing: border-box;
+        margin-top: 60px;
+        padding: 0 20px;
+        flex: 0 0 50%;
+        .video {
+          position: relative;
+          cursor: pointer;
+          .cover {
+            background-color: #000;
+            width: 100%;
+            img {
+              opacity: .6;
+            }
+          }
+          .play-icon {
+            transform: translate(-50%, -50%);
+            position: absolute;
+            height: auto;
+            width: 67px;
+            left: 50%;
+            top: 50%;
+          }
+        }
+      }
+    }
+    .yee-desc {
+      font-family: 'San Francisco', "Helvetica Neue", Helvetica, Arial, san-serif;
+      padding: 0 calc(~'10% + 20px');
+      line-height: 30px;
+      margin-top: 50px;
+      font-size: 18px;
+      color: #262626;
+    }
+  }
+
+  .section-title {
+    justify-content: center;
+    align-items: center;
+    padding-top: 95px;
+    font-size: 30px;
+    color: #2e2a39;
+    display: flex;
+    height: auto;
+    .title {
+      flex: 0 0 auto;
+    }
+    &:before {
+      background-color: #b2b2b2;
+      display: flex;
+      margin-right: 40px;
+      flex: 0 0 30px;
+      height: 4px;
+      content: '';
+    }
+    &:after {
+      background-color: #b2b2b2;
+      margin-left: 40px;
+      flex: 0 0 30px;
+      height: 4px;
+      content: '';
     }
   }
 }
