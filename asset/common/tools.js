@@ -1,12 +1,20 @@
 import logoImg from './images/header/logo.png'
-import _ from 'lodash'
+import facebookImg from './images/footer/facebook.png'
+import telegramImg from './images/footer/telegram.png'
+import twitterImg from './images/footer/twitter.png'
+import redditImg from './images/footer/reddit.png'
+import mailImg from './images/footer/mail.png'
 
 const header = {
     logoImg
 }
 
 const footer = {
-    logoImg
+    facebookImg,
+    telegramImg,
+    twitterImg,
+    redditImg,
+    mailImg
 }
 
 const tools = {

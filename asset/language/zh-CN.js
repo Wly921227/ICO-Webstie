@@ -31,5 +31,8 @@ export default {
         login: '登录',
         language: '语言'
     },
-    footer: {}
+    footer: {
+        copyright: 'Copyright © 2017 CyberMiles Foundation Ltd. All rights reserved.',
+        terms: 'Privacy & Terms'
+    }
 }
