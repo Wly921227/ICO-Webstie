@@ -8,7 +8,11 @@ export default {
         title: '用户验证',
         next: '下一步',
         statement: 'By clicking ‘get started’, you agree to YeeCall’s',
-        terms: 'Term of Use and Privacy Policy.'
+        terms: 'Term of Use and Privacy Policy.',
+        verifyNumber: 'Verify number',
+        verifyTip: 'Verification code sent to',
+        verifyBtn: 'VERIFY',
+        resend: 'RESEND VERIFICATION CODE'
     },
     home: {
         title: '首页',

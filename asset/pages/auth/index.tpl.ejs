@@ -11,13 +11,12 @@
                             </div>
                             <div class="form-item">
                                 <div class="country-code">
-                                    <input type="text" class="country-name" readonly>
-                                    <i class="arrow-icon"></i>
-                                    <select name="country" class="country-select">
+                                    <select for="countrySelect" class="country-select">
                                         <% global.country.forEach(value => { %>
                                         <option value="<%- value.code %>"><%- value.country %></option>
                                         <% }) %>
                                     </select>
+                                    <i class="arrow-icon"></i>
                                 </div>
                             </div>
                         </div>
@@ -34,8 +33,8 @@
                         </div>
                         <div class="form-controller">
                             <div class="form-item">
-                                <div class="form-action">
-                                    <button type="submit" class="submit text">
+                                <div class="form-action controller-action">
+                                    <button type="button" class="btn submit text">
                                         <%- language.next %>
                                     </button>
                                 </div>
@@ -51,7 +50,38 @@
                 </div>
             </section>
             <section class="verify-page right" data-index="1">
-                verify
+                <div class="title-bar">
+                    <div class="back" data-back="phone">
+                        <i class="icon-back"></i>
+                    </div>
+                    <div class="page-title text">
+                        <%- language.verifyNumber %>
+                    </div>
+                </div>
+                <div class="verify-controller">
+                    <div class="verify-tip">
+                        <div class="verify-info">
+                            <div class="tip text"><%- language.verifyTip %></div>
+                            <div class="phone-number text">+86 13149531123</div>
+                        </div>
+                        <div class="verify-phone">
+                            <i class="icon-verify-phone"></i>
+                        </div>
+                    </div>
+                    <div class="verify-code">
+                        <input type="text" class="code" maxlength="4">
+                    </div>
+                    <div class="controller-action">
+                        <button type="button" class="btn verify-submit text">
+                            <%- language.verifyBtn %>
+                        </button>
+                    </div>
+                    <div class="resend-code">
+                        <div class="btn resend-submit text">
+                            <%- language.resend %>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="profile-page right" data-index="2">
                 profile

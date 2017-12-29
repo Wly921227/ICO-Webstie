@@ -5,13 +5,17 @@ import { renderPage } from '../common/tools'
 // images
 import earthImg from '../common/images/auth/earth-icon.png'
 import phoneImg from '../common/images/auth/phone-icon.png'
+import backImg from '../common/images/auth/back-icon.png'
+import verifyPhoneImg from '../common/images/auth/verify-phone.png'
 
 const authRouter = new Router()
 const log = logger('auth')
 
 const images = {
+    verifyPhoneImg,
     earthImg,
-    phoneImg
+    phoneImg,
+    backImg
 }
 
 authRouter.get('/auth', async (req, res) => {

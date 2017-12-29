@@ -36,7 +36,29 @@
           transform: translateX(-100%);
         }
         .title-bar {
+          align-items: center;
           flex: 0 0 25px;
+          display: flex;
+          .back {
+            margin-right: 50px;
+            cursor: pointer;
+            flex: 0 0 24px;
+            height: 100%;
+            .icon-back {
+              background-image: url(../../common/images/auth/back-icon.png);
+              background-repeat: no-repeat;
+              background-size: 100% auto;
+              background-position: 0 50%;
+              display: inline-block;
+              height: 100%;
+              width: 100%;
+            }
+          }
+          .page-title {
+            font-weight: 600;
+            font-size: 28px;
+            color: #ffb224;
+          }
         }
         .phone-controller {
           margin-top: 46px;
@@ -56,14 +78,16 @@
               right: 5px;
               top: 50%;
             }
-            .country-name {
+            .country-select {
+              border: none;
               border-bottom: 1px solid #cccccc;
-              cursor: pointer;
+              background-color: transparent;
+              box-shadow: none;
+              border-radius: 0;
+              font-size: 20px;
+              color: #33180a;
               height: 100%;
               width: 100%;
-            }
-            .country-select {
-              display: none;
             }
           }
           .phone-num {
@@ -91,14 +115,98 @@
             padding: 0;
             margin: 0;
           }
-          .submit {
+        }
+        .verify-controller {
+          padding-right: 50px;
+          padding-left: 75px;
+          flex: 1 1 auto;
+          .verify-tip {
+            margin-top: 30px;
+            display: flex;
+            height: 70px;
+            .verify-phone {
+              flex: 0 0 50px;
+              height: 100%;
+              .icon-verify-phone {
+                background-image: url(../../common/images/auth/verify-phone.png);
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+                background-position: 0 50%;
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+              }
+            }
+            .verify-info {
+              justify-content: center;
+              flex-direction: column;
+              box-sizing: border-box;
+              flex: 1 1 auto;
+              display: flex;
+              .tip {
+                align-items: center;
+                font-size: 18px;
+                color: #816e67;
+                flex: 1 1 auto;
+                display: flex;
+              }
+              .phone-number {
+                align-items: center;
+                font-size: 22px;
+                color: #ffb224;
+                flex: 1 1 auto;
+                display: flex;
+              }
+            }
+          }
+          .verify-code {
+            margin-top: 30px;
+            .code {
+              border: none;
+              border-bottom: 1px solid;
+              box-sizing: border-box;
+              letter-spacing: 50px;
+              text-align: center;
+              padding: 10px 25px;
+              font-size: 30px;
+              color: #0092ff;
+              height: 100%;
+              width: 100%;
+            }
+          }
+          .controller-action {
+            margin-top: 50px;
+            .btn {
+              width: 100%;
+            }
+          }
+          .resend-code {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+            color: #816e67;
+            .btn {
+              cursor: pointer;
+            }
+          }
+        }
+        .controller-action {
+          text-align: center;
+          .btn {
             background-color: #ffb224;
+            transition: all .5s ease;
+            border-radius: 3px;
             line-height: 50px;
             font-weight: 600;
             font-size: 20px;
+            cursor: pointer;
             border: none;
             color: #fff;
             width: 66%;
+            &:active {
+              box-shadow: 0 2px 20px 1px #ffca47;
+              background-color: #ffa733;
+            }
           }
         }
         .statement {

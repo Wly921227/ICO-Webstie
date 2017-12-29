@@ -25,4 +25,26 @@ const scrollToPage = page => {
     }
 }
 
-window.scrollToPage = scrollToPage
+const initEvent = () => {
+    // 填写手机号
+    $('.phone-controller').on('click', '.phone-form .submit', e => {
+        e.preventDefault()
+        // TODO 输入内容验证
+        // TODO 提交手机请求
+        // 用户验证页面
+        scrollToPage('verify')
+        // 用户登录页面
+//        scrollToPage('password')
+    })
+    // 顶部返回按钮
+    $('.title-bar .back').on('click', function (e) {
+        e.preventDefault()
+        const $this = $(this)
+        const page = $this.data('back')
+        scrollToPage(page)
+    })
+}
+
+$(document).ready(() => {
+    initEvent()
+})
