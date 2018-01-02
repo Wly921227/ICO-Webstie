@@ -13,6 +13,4 @@ import '../../common/images/resource/user-image.png'
 
 import $ from 'jquery'
 
-$(document).ready(() => {
-    $('.time-line').height($(window).height() * .73)
-})
+$('.time-line').height($(window).height() * .73)

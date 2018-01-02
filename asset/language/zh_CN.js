@@ -60,7 +60,17 @@ export default {
     header: {
         title: 'YEE',
         login: '登录',
-        language: '语言'
+        language: '语言',
+        nav: [
+            {
+                path: 'home',
+                name: '首页'
+            },
+            {
+                path: 'faq',
+                name: '帮助中心'
+            }
+        ]
     },
     footer: {
         copyright: 'Copyright © 2017 CyberMiles Foundation Ltd. All rights reserved.',

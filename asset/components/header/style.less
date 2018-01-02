@@ -1,5 +1,7 @@
 .header {
   background: #2e2a39;
+  position: relative;
+  z-index: 2;
   .warp-header {
     align-items: center;
     text-align: center;
@@ -19,7 +21,7 @@
   .nav {
     flex: 1 1 auto;
     ul {
-      flex-direction: row-reverse;
+      justify-content: flex-end;
       display: flex;
       li {
         flex: 0 0 130px;
@@ -31,33 +33,9 @@
     cursor: pointer;
     flex: 0 0 130px;
     .toggle {
-      background-color: #2e2a39;
+      background: #2e2a39;
       position: relative;
       z-index: 2;
-    }
-    .change-language {
-      transform: translateY(-100%);
-      background-color: #423a58;
-      transition: all .5s ease;
-      position: absolute;
-      overflow: hidden;
-      width: 100%;
-      z-index: 1;
-      top: 100%;
-      right: 0;
-      left: 0;
-      .language-item {
-        transition: all .5s ease;
-        &:hover {
-          background-color: #ffca28;
-          color: #262626;
-        }
-      }
-    }
-    &.open {
-      .change-language {
-        transform: translateY(0);
-      }
     }
   }
   .user {
@@ -68,6 +46,29 @@
     a {
       height: 100%;
       width: 100%;
+    }
+  }
+}
+
+.change-language {
+  &.open {
+    transform: translateY(0) rotateX(0);
+  }
+  transform: translateY(-100%) rotateX(90deg);
+  background-color: #f6f6f6;
+  transition: all .5s ease;
+  text-align: center;
+  line-height: 64px;
+  overflow: hidden;
+  font-size: 16px;
+  position: fixed;
+  color: #262626;
+  z-index: 0;
+  .language-item {
+    transition: all .5s ease;
+    &:hover {
+      background-color: #ffca28;
+      color: #262626;
     }
   }
 }
@@ -106,5 +107,10 @@
       padding: 0 .5rem;
       flex: 0 0 auto;
     }
+  }
+
+  .change-language {
+    line-height: 2.8rem;
+    font-size: 1rem;
   }
 }

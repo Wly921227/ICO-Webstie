@@ -20,6 +20,4 @@ function initEvent () {
     })
 }
 
-$(document).ready(() => {
-    initEvent()
-})
+initEvent()

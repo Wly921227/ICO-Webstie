@@ -25,13 +25,13 @@ const tools = {
             ? req.headers['accept-language'].split(';')[0]
             : 'en').toLowerCase()
         if (locCode.indexOf('zh') > -1 && locCode.indexOf('cn')) {
-            return 'zh-CN'
+            return 'zh_CN'
         } else if (locCode.indexOf('zh') > -1) {
-            return 'zh-TW'
+            return 'zh_TW'
         } else if (locCode.indexOf('ar') > -1) {
-            return 'ar-SA'
+            return 'ar_SA'
         } else {
-            return 'en-US'
+            return 'en_US'
         }
     },
     getLanguage (loc, page) {
@@ -51,6 +51,7 @@ const tools = {
     renderPage (page, req, res, data) {
         // 语言
         const loc = req.params.loc ? req.params.loc : tools.getLocCode(req)
+        console.log('====> loc: ', loc)
         // 路径
         let path = req.path
         const pl = path.split('/')
@@ -63,6 +64,7 @@ const tools = {
             pl.shift()
             path = `${pl.join('/')}`
         }
+        console.log('====> path: ', path)
         // 文案
         const language = tools.getLanguage(loc, page)
         // 图片

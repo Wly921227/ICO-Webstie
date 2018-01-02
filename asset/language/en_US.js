@@ -60,7 +60,17 @@ export default {
     header: {
         title: 'YEE',
         login: 'Log in',
-        language: 'Language'
+        language: 'Language',
+        nav: [
+            {
+                path: 'home',
+                name: 'HOME'
+            },
+            {
+                path: 'faq',
+                name: 'FAQ'
+            }
+        ]
     },
     footer: {
         copyright: 'Copyright © 2017 CyberMiles Foundation Ltd. All rights reserved.',

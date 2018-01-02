@@ -24,29 +24,24 @@
         </div>
         <div class="nav">
             <ul>
+                <% language.nav.forEach(value => { %>
                 <li>
-                    <div class="nav-item text">References</div>
+                    <% if (hadLoc) { %>
+                    <a href="/<%- loc %>/<%- value.path %>">
+                        <div class="nav-item text"><%- value.name %></div>
+                    </a>
+                    <% }else{ %>
+                    <a href="/<%- value.path %>">
+                        <div class="nav-item text"><%- value.name %></div>
+                    </a>
+                    <% } %>
                 </li>
+                <% }) %>
             </ul>
         </div>
         <div class="language">
             <div class="toggle text">
                 <%- language.language %>
-            </div>
-            <div class="change-language">
-                <div class="language-list">
-                    <ul>
-                        <% global.locCode.forEach(value => { %>
-                        <li class="language-item">
-                            <a href="/<%- value.code %>/<%- path %>">
-                                <div class="language">
-                                    <%- value.name %>
-                                </div>
-                            </a>
-                        </li>
-                        <% }) %>
-                    </ul>
-                </div>
             </div>
         </div>
         <div class="user">
@@ -56,3 +51,18 @@
         </div>
     </section>
 </header>
+<div class="change-language">
+    <div class="language-list">
+        <ul>
+            <% global.locCode.forEach(value => { %>
+            <li class="language-item">
+                <a href="/<%- value.code %>/<%- path %>">
+                    <div class="language">
+                        <%- value.name %>
+                    </div>
+                </a>
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+</div>

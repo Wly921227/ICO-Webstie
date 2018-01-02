@@ -43,6 +43,4 @@ const initEvent = () => {
     })
 }
 
-$(document).ready(() => {
-    initEvent()
-})
+initEvent()
