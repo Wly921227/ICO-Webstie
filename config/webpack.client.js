@@ -21,7 +21,8 @@ let config = {
             'jquery'
         ],
         auth: getDevEntry('./pages/auth'),
-        home: getDevEntry('./pages/home')
+        home: getDevEntry('./pages/home'),
+        faq: getDevEntry('./pages/faq')
     },
     output: {
         path: path.resolve(__dirname, '../static/public'),
@@ -66,7 +67,8 @@ if (process.env.NODE_ENV === 'production') {
                 'jquery'
             ],
             auth: ('./pages/auth'),
-            home: ('./pages/home')
+            home: ('./pages/home'),
+            faq: ('./pages/faq')
         },
         output: {
             path: path.resolve(__dirname, `../dist/ico/public`),

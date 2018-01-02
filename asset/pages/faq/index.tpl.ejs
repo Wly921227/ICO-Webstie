@@ -1,0 +1,23 @@
+<div class="main <%- loc %>">
+    <section class="section-faq">
+        <div class="faq-warp">
+            <div class="faqs-list">
+                <ul>
+                    <% language.questions.forEach(value => { %>
+                    <li class="faq-item">
+                        <div class="faq">
+                            <div class="question toggle">
+                                <i class="icon triangle-icon"></i>
+                                <span class="text"><%- value.title %></span>
+                            </div>
+                            <div class="answer">
+                                <span class="text"><%- value.answer %></span>
+                            </div>
+                        </div>
+                    </li>
+                    <% }) %>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,101 @@
+@import url(../../common/style);
+
+body {
+  .header {
+    background-color: #f0f1f5;
+    .warp-header {
+      color: #262626;
+    }
+    .language {
+      .toggle {
+        background-color: #f0f1f5;
+      }
+      .change-language {
+        background-color: #f6f6f6;
+      }
+    }
+  }
+}
+
+.main {
+  .faq-warp {
+    padding: 55px 77px;
+    .faq-item {
+      margin-top: 27px;
+      overflow: hidden;
+      .faq {
+        &.show {
+          .question {
+            .triangle-icon {
+              transform: rotate(0deg);
+            }
+          }
+          .answer {
+            display: inline-block;
+          }
+        }
+        .question {
+          align-items: center;
+          display: flex;
+          .triangle-icon {
+            background-image: url(../../common/images/faq/triangle-icon.png);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: 0 0;
+            transition: transform .3s ease;
+            transform: rotate(-90deg);
+            margin-right: 8px;
+            margin-left: 2px;
+            flex: 0 0 16px;
+            height: 14px;
+          }
+          .text {
+            line-height: 30px;
+            font-size: 20px;
+            color: #262626;
+          }
+        }
+        .answer {
+          padding: 10px 10px 28px 10px;
+          line-height: 24px;
+          color: #808080;
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 895px) {
+  .main {
+    section[class^=section-] {
+      padding-right: 4%;
+      padding-left: 4%;
+    }
+    .faq-warp {
+      padding: 2rem 0;
+      .faq-item {
+        margin-top: 1rem;
+        .faq {
+          .question {
+            align-items: flex-start;
+            .triangle-icon {
+              margin-top: .5rem;
+              flex: 0 0 .8rem;
+              height: .7rem;
+            }
+            .text {
+              line-height: 1.9rem;
+              font-size: 1rem;
+            }
+          }
+          .answer {
+            padding: .5rem 1rem 2rem 1rem;
+            line-height: 1.5rem;
+            font-size: .9rem;
+          }
+        }
+      }
+    }
+  }
+}

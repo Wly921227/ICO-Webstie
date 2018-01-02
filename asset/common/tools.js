@@ -42,7 +42,7 @@ const tools = {
             lan = require(`../language/${constants.defaultLoc}`)
         }
         return {
-            [page]: lan[page],
+            [page]: lan[page] || {},
             header: lan['header'],
             footer: lan['footer'],
             global: lan['global']

@@ -39,6 +39,23 @@ export default {
         sectionTitle11: 'YEE partners & collaborators',
         whatIsYee: 'CyberMiles ("CM") is the blockchain technology being developed by 5xlab, a blockchain development laboratory. 5xlab is working closely with 5miles, a leading c2c marketplace operator with more than 12 million users in the US.  5miles is expected to be the first platform to utilize CyberMiles’ blockchain protocol, and will also assist 5xlab to develop the technology. Over the last 3 years of leading innovation in online & local marketplaces, 5miles has accumulated the necessary technical and commercial know-how to tailor blockchain technology & smart-contracts for real-world applications. 5xlab seeks to use this expertise to develop CyberMiles, with focus on trust and compliance. This will enable it to be a mainstream blockchain technology for real-world businesses. '
     },
+    faq: {
+        title: 'FAQ',
+        questions: [
+            {
+                title: 'What will I need to do to participate in the CyberMiles Token Sale?',
+                answer: '5miles comprises of team members with extensive experience from leading internet companies, e-commerce platforms, and financial services companies from 5 different countries. For the past three years, the team has applied their expertise to build a successful marketplace, which has become one of the leading shopping apps in the US, generating over USD 3 billion of annual transaction value.'
+            },
+            {
+                title: 'How are the key dates related to the CyberMiles Token Sale?',
+                answer: '5miles comprises of team members with extensive experience from leading internet companies, e-commerce platforms, and financial services companies from 5 different countries. For the past three years, the team has applied their expertise to build a successful marketplace, which has become one of the leading shopping apps in the US, generating over USD 3 billion of annual transaction value.'
+            },
+            {
+                title: 'Can I use an ETH address different with registration to join CyberMiles Token Sale?',
+                answer: '5miles comprises of team members with extensive experience from leading internet companies, e-commerce platforms, and financial services companies from 5 different countries. For the past three years, the team has applied their expertise to build a successful marketplace, which has become one of the leading shopping apps in the US, generating over USD 3 billion of annual transaction value.'
+            }
+        ]
+    },
     // 组件
     header: {
         title: 'YEE',

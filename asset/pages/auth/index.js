@@ -3,8 +3,6 @@ import '../../components'
 
 import $ from 'jquery'
 
-window.$ = $
-
 const scrollToPage = page => {
     const $oldPage = $('.auth-warp [class*="-page"].center')
     const $newPage = $(`.auth-warp .${page}-page`)
