@@ -84,10 +84,40 @@
                 </div>
             </section>
             <section class="profile-page right" data-index="2">
-                profile
             </section>
             <section class="password-page right" data-index="3">
-                password
+                <div class="title-bar">
+                    <div class="back" data-back="phone">
+                        <i class="icon-back"></i>
+                    </div>
+                    <div class="page-title text">
+                        <%- language.enterPassword %>
+                    </div>
+                </div>
+                <div class="pass-controller">
+                    <div class="pass-tip">
+                        <div class="user-info">
+                            <div class="username text">TODO user name</div>
+                            <div class="phone-number text">user phone number</div>
+                        </div>
+                        <div class="pass-phone">
+                            <i class="icon-pass-phone"></i>
+                        </div>
+                    </div>
+                    <div class="password-warp">
+                        <input type="password" class="password" name="password">
+                    </div>
+                    <div class="controller-action">
+                        <button type="button" class="btn start-submit text">
+                            <%- language.start %>
+                        </button>
+                    </div>
+                    <div class="forget-pass">
+                        <div class="btn forget-submit text">
+                            <%- language.forget %>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </div>

@@ -16,7 +16,10 @@ export default {
         verifyNumber: 'Verify number',
         verifyTip: 'Verification code sent to',
         verifyBtn: 'VERIFY',
-        resend: 'RESEND VERIFICATION CODE'
+        resend: 'RESEND VERIFICATION CODE',
+        enterPassword: 'Enter Password',
+        forget: 'FORGET PASSWORD',
+        start: 'GET STARTED'
     },
     home: {
         title: '首页',
