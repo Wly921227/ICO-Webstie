@@ -1,3 +1,4 @@
 export default {
-    locCode: 'en-US'
+    locCode: 'en_US',
+
 }

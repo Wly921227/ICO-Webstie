@@ -2,7 +2,11 @@ import country from './country_zh'
 
 export default {
     global: {
-        country
+        country,
+        locCode: [
+            {code: 'en_US', name: '英语'},
+            {code: 'zh_CN', name: '简体中文'}
+        ]
     },
     auth: {
         title: '用户验证',

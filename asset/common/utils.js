@@ -1,5 +1,3 @@
-import constants from './constants'
-
 const ua = typeof window === 'undefined'
     ? ''
     : navigator.userAgent.toLowerCase()

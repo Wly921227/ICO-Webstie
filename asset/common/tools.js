@@ -1,3 +1,5 @@
+import constants from './constants'
+
 import logoImg from './images/header/logo.png'
 import facebookImg from './images/footer/facebook.png'
 import telegramImg from './images/footer/telegram.png'
@@ -47,9 +49,23 @@ const tools = {
         }
     },
     renderPage (page, req, res, data) {
+        // 语言
         const loc = req.params.loc ? req.params.loc : tools.getLocCode(req)
-
+        // 路径
+        let path = req.path
+        const pl = path.split('/')
+        if (req.params.loc) {
+            data.hadLoc = true
+            pl.shift()
+            pl.shift()
+            path = `${pl.join('/')}`
+        } else {
+            pl.shift()
+            path = `${pl.join('/')}`
+        }
+        // 文案
         const language = tools.getLanguage(loc, page)
+        // 图片
         const images = {
             header,
             footer
@@ -62,6 +78,7 @@ const tools = {
         const renderData = {
             language,
             images,
+            path,
             page,
             loc
         }

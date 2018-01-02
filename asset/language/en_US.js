@@ -2,7 +2,11 @@ import country from './country_en'
 
 export default {
     global: {
-        country
+        country,
+        locCode: [
+            {code: 'en_US', name: 'English'},
+            {code: 'zh_CN', name: 'Chinese'}
+        ]
     },
     auth: {
         title: 'auth',

@@ -27,8 +27,38 @@
     }
   }
   .language {
+    position: relative;
     cursor: pointer;
     flex: 0 0 130px;
+    .toggle {
+      background-color: #2e2a39;
+      position: relative;
+      z-index: 2;
+    }
+    .change-language {
+      transform: translateY(-100%);
+      background-color: #423a58;
+      transition: all .5s ease;
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      z-index: 1;
+      top: 100%;
+      right: 0;
+      left: 0;
+      .language-item {
+        transition: all .5s ease;
+        &:hover {
+          background-color: #ffca28;
+          color: #262626;
+        }
+      }
+    }
+    &.open {
+      .change-language {
+        transform: translateY(0);
+      }
+    }
   }
   .user {
     background-color: #ffca28;
@@ -38,6 +68,43 @@
     a {
       height: 100%;
       width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 895px) {
+  .header {
+    .warp-header {
+      line-height: 3rem;
+      font-size: 1rem;
+      height: 100%;
+    }
+    .logo {
+      margin-right: .5rem;
+      flex: 0 0 1.5rem;
+    }
+    .title {
+      display: none;
+    }
+    .nav {
+      flex: 1 1 auto;
+      ul {
+        li {
+          padding: 0 .5rem;
+          flex: 0 0 auto;
+        }
+      }
+    }
+    .language {
+      flex: 0 0 auto;
+      padding: 0;
+      .toggle {
+        padding: 0 .5rem;
+      }
+    }
+    .user {
+      padding: 0 .5rem;
+      flex: 0 0 auto;
     }
   }
 }
