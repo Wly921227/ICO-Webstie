@@ -1,4 +1,5 @@
 import country from './country_en'
+import userImageImg from '../common/images/resource/user-image.png'
 
 export default {
     global: {
@@ -40,7 +41,33 @@ export default {
         sectionTitle9: 'YEE ADVISORS',
         sectionTitle10: 'YEE partners & collaborators',
         sectionTitle11: 'YEE partners & collaborators',
-        whatIsYee: 'CyberMiles ("CM") is the blockchain technology being developed by 5xlab, a blockchain development laboratory. 5xlab is working closely with 5miles, a leading c2c marketplace operator with more than 12 million users in the US.  5miles is expected to be the first platform to utilize CyberMiles’ blockchain protocol, and will also assist 5xlab to develop the technology. Over the last 3 years of leading innovation in online & local marketplaces, 5miles has accumulated the necessary technical and commercial know-how to tailor blockchain technology & smart-contracts for real-world applications. 5xlab seeks to use this expertise to develop CyberMiles, with focus on trust and compliance. This will enable it to be a mainstream blockchain technology for real-world businesses. '
+        whatIsYee: `基于长达 10 年的通讯技术实践、过去三年对 YeeCall 开发和运营的理解，以及区块链技术对现有移动互联网技术和产品形态可能产生革命性创新的洞见。
+我们力图搭建一套基于以太坊的高效、可靠的支持点对点、群组、直播、 IOT 的分布式云通讯网络 YeeNet，并在此基础上：
+<ul><li class="small">开发一个支持点对点及群组的即时通讯应用 YeeCall；</li><li class="small">搭建一套无摩擦的、支持智能合约的支付设施 YeeWallet；</li><li class="small">支持网页开发套件，便于开发者接入 YeeNet、YeeCall 和 YeeWallet，建立丰富的 DApp Store - YeeStore；</li></ul>
+我们将 YeeNet、YeeCall、YeeWallet、YeeStore 这一套完整的框架定义为 Yee。
+Yee 将是一个基于区块链的通讯基础设施及去中心化的社交生态系统。`,
+        advantages: [
+            {
+                title: '通讯网络覆盖全球',
+                img: userImageImg,
+                desc: 'YeeCall 已经建立了一张覆盖全球 227 个国家、1000 多家运营商的通讯网络，拥有 5 个数据中心、400 多个中继节点，70% 的流量都通过 P2P 模式高效传输，目前这张网络已经向 IOT 兼容网络演进；'
+            },
+            {
+                title: '全球3000万用户',
+                img: userImageImg,
+                desc: 'YeeCall 拥有超过 3000 万的注册用户，这些用户分布在东南亚、欧美、印度和中东地区，已经形成了一个熟人为主的社交网络；'
+            },
+            {
+                title: '团队经验、技术储备丰富',
+                img: userImageImg,
+                desc: '团队在通讯领域有 10 年以上技术积累，在人工智能、区块链等领域也有 3 年以上的技术储备；在全球运营过 3 个超过亿级用户量的产品；'
+            },
+            {
+                title: '开放的合作生态圈',
+                img: userImageImg,
+                desc: '全球用户数超过1亿的合作伙伴超过10家'
+            }
+        ]
     },
     faq: {
         title: 'FAQ',

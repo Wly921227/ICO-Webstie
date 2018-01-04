@@ -25,9 +25,9 @@
                     </div>
                 </div>
                 <div class="action">
-                    <div class="btn technical text">
-                        <%- language.technical %>
-                    </div>
+                    <!--<div class="btn technical text">-->
+                    <!--<%- language.technical %>-->
+                    <!--</div>-->
                     <div class="btn project text">
                         <%- language.project %>
                     </div>
@@ -79,59 +79,117 @@
             </div>
         </div>
     </section>
-    <section class="section-3">
+    <section class="section-5">
         <div class="warp-main">
             <div class="section-title">
-                <span class="title text"><%- language.sectionTitle2 %></span>
+                <div class="title text">
+                    <%- language.sectionTitle4 %>
+                </div>
             </div>
             <div class="video-list">
-                <div class="video-line">
-                    <div class="video-item">
-                        <div class="video">
-                            <div class="cover">
-                                <img src="<%- images.videoImg %>">
-                            </div>
-                            <div class="play-icon"><img src="<%- images.playIcon %>"></div>
+                <div class="video-item">
+                    <div class="video">
+                        <div class="cover">
+                            <img src="<%- images.videoImg %>">
                         </div>
-                        <div class="video-title">On your side: YEE - a decentralised ecosystem for immigrants.</div>
-                        <div class="video-info">CNN News - 21 August, 2014</div>
-                    </div>
-                    <div class="video-item">
-                        <div class="video">
-                            <div class="cover">
-                                <img src="<%- images.videoImg %>">
-                            </div>
-                            <div class="play-icon"><img src="<%- images.playIcon %>"></div>
-                        </div>
-                        <div class="video-title">On your side: YEE - a decentralised ecosystem for immigrants.</div>
-                        <div class="video-info">CNN News - 21 August, 2014</div>
+                        <div class="play-icon"><img src="<%- images.playIcon %>"></div>
                     </div>
                 </div>
-                <div class="video-line">
-                    <div class="video-item">
-                        <div class="video">
-                            <div class="cover">
-                                <img src="<%- images.videoImg %>">
-                            </div>
-                            <div class="play-icon"><img src="<%- images.playIcon %>"></div>
+                <div class="video-item">
+                    <div class="video">
+                        <div class="cover">
+                            <img src="<%- images.videoImg %>">
                         </div>
-                        <div class="video-title">On your side: YEE - a decentralised ecosystem for immigrants.</div>
-                        <div class="video-info">CNN News - 21 August, 2014</div>
-                    </div>
-                    <div class="video-item">
-                        <div class="video">
-                            <div class="cover">
-                                <img src="<%- images.videoImg %>">
-                            </div>
-                            <div class="play-icon"><img src="<%- images.playIcon %>"></div>
-                        </div>
-                        <div class="video-title">On your side: YEE - a decentralised ecosystem for immigrants.</div>
-                        <div class="video-info">CNN News - 21 August, 2014</div>
+                        <div class="play-icon"><img src="<%- images.playIcon %>"></div>
                     </div>
                 </div>
+            </div>
+            <div class="yee-desc text">
+                <% language.whatIsYee.split('\n').forEach(value => { %>
+                <p><%- value %></p><br>
+                <% }) %>
             </div>
         </div>
     </section>
+    <section class="section-6">
+        <div class="warp-main">
+            <div class="section-title">
+                <div class="title text"><%- language.sectionTitle5 %></div>
+            </div>
+        </div>
+        <div class="advantages-list">
+            <ul>
+                <% language.advantages.forEach(value => { %>
+                <li class="advantage-item">
+                    <div class="advantage">
+                        <div class="user-image">
+                            <img src="<%- value.img %>">
+                        </div>
+                        <div class="content">
+                            <div class="title text"><%- value.title %></div>
+                            <div class="desc text">
+                                <%- value.desc %>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <% }) %>
+            </ul>
+        </div>
+    </section>
+    <!--<section class="section-3">-->
+        <!--<div class="warp-main">-->
+            <!--<div class="section-title">-->
+                <!--<span class="title text"><%- language.sectionTitle2 %></span>-->
+            <!--</div>-->
+            <!--<div class="video-list">-->
+                <!--<div class="video-line">-->
+                    <!--<div class="video-item">-->
+                        <!--<div class="video">-->
+                            <!--<div class="cover">-->
+                                <!--<img src="<%- images.videoImg %>">-->
+                            <!--</div>-->
+                            <!--<div class="play-icon"><img src="<%- images.playIcon %>"></div>-->
+                        <!--</div>-->
+                        <!--<div class="video-title">On your side: YEE - a decentralised ecosystem for immigrants.</div>-->
+                        <!--<div class="video-info">CNN News - 21 August, 2014</div>-->
+                    <!--</div>-->
+                    <!--<div class="video-item">-->
+                        <!--<div class="video">-->
+                            <!--<div class="cover">-->
+                                <!--<img src="<%- images.videoImg %>">-->
+                            <!--</div>-->
+                            <!--<div class="play-icon"><img src="<%- images.playIcon %>"></div>-->
+                        <!--</div>-->
+                        <!--<div class="video-title">On your side: YEE - a decentralised ecosystem for immigrants.</div>-->
+                        <!--<div class="video-info">CNN News - 21 August, 2014</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="video-line">-->
+                    <!--<div class="video-item">-->
+                        <!--<div class="video">-->
+                            <!--<div class="cover">-->
+                                <!--<img src="<%- images.videoImg %>">-->
+                            <!--</div>-->
+                            <!--<div class="play-icon"><img src="<%- images.playIcon %>"></div>-->
+                        <!--</div>-->
+                        <!--<div class="video-title">On your side: YEE - a decentralised ecosystem for immigrants.</div>-->
+                        <!--<div class="video-info">CNN News - 21 August, 2014</div>-->
+                    <!--</div>-->
+                    <!--<div class="video-item">-->
+                        <!--<div class="video">-->
+                            <!--<div class="cover">-->
+                                <!--<img src="<%- images.videoImg %>">-->
+                            <!--</div>-->
+                            <!--<div class="play-icon"><img src="<%- images.playIcon %>"></div>-->
+                        <!--</div>-->
+                        <!--<div class="video-title">On your side: YEE - a decentralised ecosystem for immigrants.</div>-->
+                        <!--<div class="video-info">CNN News - 21 August, 2014</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
     <section class="section-4">
         <div class="warp-main">
             <div class="section-title">
@@ -216,64 +274,6 @@
             </div>
         </div>
     </section>
-    <section class="section-5">
-        <div class="warp-main">
-            <div class="section-title">
-                <div class="title text">
-                    <%- language.sectionTitle4 %>
-                </div>
-            </div>
-            <div class="video-list">
-                <div class="video-item">
-                    <div class="video">
-                        <div class="cover">
-                            <img src="<%- images.videoImg %>">
-                        </div>
-                        <div class="play-icon"><img src="<%- images.playIcon %>"></div>
-                    </div>
-                </div>
-                <div class="video-item">
-                    <div class="video">
-                        <div class="cover">
-                            <img src="<%- images.videoImg %>">
-                        </div>
-                        <div class="play-icon"><img src="<%- images.playIcon %>"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="yee-desc text">
-                <%- language.whatIsYee %>
-            </div>
-        </div>
-    </section>
-    <section class="section-6">
-        <div class="warp-main">
-            <div class="section-title">
-                <div class="title text"><%- language.sectionTitle5 %></div>
-            </div>
-        </div>
-        <div class="advantages-list">
-            <ul>
-                <li class="advantage-item">
-                    <div class="advantage">
-                        <div class="user-image">
-                            <img src="<%- images.userImageImg %>">
-                        </div>
-                        <div class="content">
-                            <div class="title text">Platform Advantages</div>
-                            <div class="desc text">
-                                5miles comprises of team members with extensive experience from leading internet
-                                companies, e-commerce platforms, and financial services companies from 5 different
-                                countries. For the past three years, the team has applied their expertise to build a
-                                successful marketplace, which has become one of the leading shopping apps in the US,
-                                generating over USD 3 billion of annual transaction value.
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
     <section class="section-7">
         <div class="warp-main">
             <div class="section-title">
@@ -306,30 +306,30 @@
             </div>
         </div>
     </section>
-    <section class="section-8">
-        <div class="warp-main">
-            <div class="section-title">
-                <div class="title text">
-                    <%- language.sectionTitle7 %>
-                </div>
-            </div>
-            <div class="questions-list">
-                <div class="question-item">
-                    <div class="title text">
-                        1. What is CyberMiles and why should I care?
-                    </div>
-                    <div class="desc text">
-                        CyberMiles is a new blockchain protocol being developed for the sole purpose of revolutionizing
-                        how commerce & marketplaces work. Imagine a world in which consumers can buy and sell products
-                        amongst themselves with the same confidence and certainty as they would from Amazon, or Walmart.
-                        Or if individuals could create their own marketplaces, and manage these communities in a truly
-                        democratic way. And now imagine if you could help shape this technology by being part of the
-                        network? That is the world that CyberMiles is creating.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--<section class="section-8">-->
+        <!--<div class="warp-main">-->
+            <!--<div class="section-title">-->
+                <!--<div class="title text">-->
+                    <!--<%- language.sectionTitle7 %>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="questions-list">-->
+                <!--<div class="question-item">-->
+                    <!--<div class="title text">-->
+                        <!--1. What is CyberMiles and why should I care?-->
+                    <!--</div>-->
+                    <!--<div class="desc text">-->
+                        <!--CyberMiles is a new blockchain protocol being developed for the sole purpose of revolutionizing-->
+                        <!--how commerce & marketplaces work. Imagine a world in which consumers can buy and sell products-->
+                        <!--amongst themselves with the same confidence and certainty as they would from Amazon, or Walmart.-->
+                        <!--Or if individuals could create their own marketplaces, and manage these communities in a truly-->
+                        <!--democratic way. And now imagine if you could help shape this technology by being part of the-->
+                        <!--network? That is the world that CyberMiles is creating.-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
     <section class="section-9">
         <div class="warp-main">
             <div class="section-title">
