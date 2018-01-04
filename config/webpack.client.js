@@ -21,6 +21,7 @@ let config = {
             'jquery'
         ],
         auth: getDevEntry('./pages/auth'),
+        authRegister: getDevEntry('./pages/authRegister'),
         home: getDevEntry('./pages/home'),
         faq: getDevEntry('./pages/faq')
     },
@@ -28,7 +29,7 @@ let config = {
         path: path.resolve(__dirname, '../static/public'),
         filename: 'js/[name].js',
         chunkFilename: 'js/[name].[hash:8].js',
-        publicPath: '/ico/'
+        publicPath: '/public/'
     },
     resolve: {
         extensions: ['', '.js', '.json', '.less']
@@ -67,6 +68,7 @@ if (process.env.NODE_ENV === 'production') {
                 'jquery'
             ],
             auth: ('./pages/auth'),
+            authRegister: ('./pages/authRegister'),
             home: ('./pages/home'),
             faq: ('./pages/faq')
         },
@@ -74,7 +76,7 @@ if (process.env.NODE_ENV === 'production') {
             path: path.resolve(__dirname, `../dist/ico/public`),
             filename: 'js/[name].[hash:8].js',
             chunkFilename: 'js/[name].[hash:8].js',
-            publicPath: '/ico/'
+            publicPath: '/public/'
         }
     })
     config.plugins = config.plugins.concat([

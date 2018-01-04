@@ -1,0 +1,35 @@
+.prompt-warp {
+  @height: 60px;
+  position: absolute;
+  overflow: hidden;
+  height: @height;
+  width: 100%;
+  left: 0;
+  top: 0;
+  .prompt-content {
+    transition: all .5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    transform: translateY(-100%) rotateX(90deg);
+    justify-content: center;
+    line-height: @height;
+    align-items: center;
+    font-size: 18px;
+    height: @height;
+    display: flex;
+    z-index: 100;
+    &.show {
+      transform: translateY(0) rotateX(0);
+    }
+  }
+  [data-theme="prompt"] {
+    background-color: #0092ff;
+  }
+  [data-theme="success"] {
+    background-color: #13b50c;
+  }
+  [data-theme="warning"] {
+    background-color: #d9b833;
+  }
+  [data-theme="error"] {
+    background-color: #d93e40;
+  }
+}

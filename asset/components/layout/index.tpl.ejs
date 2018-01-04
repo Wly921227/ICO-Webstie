@@ -16,6 +16,7 @@
 <% if (!data.noFooter) { %>
 <%- include('footer', {loc: loc, global: language.global, language: language['footer'], images: images['footer']}) %>
 <% } %>
+<script>var GLOBAL = {loc: '<%- loc %>'}</script>
 <%- include('../' + page, {loc: loc, global: language.global, language: language[page], images: images[page]}) %>
 </body>
 </html>

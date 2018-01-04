@@ -22,6 +22,39 @@ export default {
         forget: 'FORGET PASSWORD',
         start: 'GET STARTED'
     },
+    authRegister: {
+        title: 'Register',
+        welcome: 'Welcome',
+        refresh: 'No clear',
+        verify: 'Verify',
+        email: 'Email',
+        verifyCode: 'Image verification',
+        emailCode: 'Email Code',
+        password: 'Enter password (6-16 numbers and characters)',
+        rePassword: 'Confirm password',
+        submit: 'Sign Up',
+        dialogTitle: 'Get YEE Token',
+        dialogDesc: 'Please read the YEE White Paper and be aware of the Pre-Sale details, confirm the conditions below to proceed the subscription.',
+        dialogOption: [
+            {
+                key: 0,
+                value: 'I HAVE read, understood and agreed the terms of Pre-Sale, been aware of the risk of the investment, and agreed the Exceptions Clause.'
+            },
+            {
+                key: 1,
+                value: 'I am NOT a U.S. citizen, nor resident, nor entity, nor on behalf of a U.S. citizen.'
+            },
+            {
+                key: 2,
+                value: 'I am NOT a South Korean citizen, nor resident, nor entity, nor citizen of Mainland China, nor on behalf of a citizen of South Korea or Mainland China.'
+            }
+        ],
+        button: 'Continue',
+        invalid: {
+            emial: 'Invalid email address',
+            verify: 'Invalid verify code'
+        }
+    },
     home: {
         title: '首页',
         desc1: 'Yee - A Decentralised Ecosystem for Immigrants',

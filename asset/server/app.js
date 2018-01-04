@@ -10,17 +10,17 @@ if (process.env.NODE_ENV === 'production') {
     app.set('trust proxy', 1)
     app.use(session({
         saveUninitialized: true,
-        name: 'ico',
+        secret: 'ico',
         resave: true,
-        secret: 'ico'
+        name: 'ico'
     }))
 } else {
     // session
     app.use(session({
         saveUninitialized: true,
-        name: 'ico',
+        secret: 'ico',
         resave: true,
-        secret: 'ico'
+        name: 'ico'
     }))
 }
 

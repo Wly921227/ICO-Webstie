@@ -147,7 +147,7 @@ ul {
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
   -webkit-touch-callout: none;
-  -webkit-appearance: none;
+  /*-webkit-appearance: none;*/
   padding: 0;
   margin: 0;
   &:focus {
@@ -169,4 +169,32 @@ img {
   vertical-align: middle;
   height: auto;
   width: 100%;
+}
+
+.form {
+  .form-row {
+    margin-bottom: 25px;
+  }
+  .form-item {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    line-height: 50px;
+    box-shadow: none;
+    padding: 0 10px;
+    font-size: 16px;
+    height: 50px;
+    width: 100%;
+    &::placeholder {
+      color: #aaa;
+    }
+    &.submit {
+      background-color: #ffca28;
+      border-color: #ffca28;
+    }
+  }
+
+  button {
+    border: none;
+  }
 }
