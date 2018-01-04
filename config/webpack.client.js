@@ -23,7 +23,8 @@ let config = {
         auth: getDevEntry('./pages/auth'),
         authRegister: getDevEntry('./pages/authRegister'),
         home: getDevEntry('./pages/home'),
-        faq: getDevEntry('./pages/faq')
+        faq: getDevEntry('./pages/faq'),
+        '404': getDevEntry('./pages/404')
     },
     output: {
         path: path.resolve(__dirname, '../static/public'),
@@ -70,7 +71,8 @@ if (process.env.NODE_ENV === 'production') {
             auth: ('./pages/auth'),
             authRegister: ('./pages/authRegister'),
             home: ('./pages/home'),
-            faq: ('./pages/faq')
+            faq: ('./pages/faq'),
+            '404': ('./pages/404')
         },
         output: {
             path: path.resolve(__dirname, `../dist/ico/public`),

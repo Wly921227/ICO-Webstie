@@ -19,6 +19,11 @@ getConfig(() => {
     app.use((req, res) => {
         const err = new Error('Not Found')
         res.status(err.status || 404)
+        if (req.path === '/') {
+            res.redirect('/home')
+        } else {
+            res.redirect('/404')
+        }
     })
 
     // error handler
@@ -29,6 +34,7 @@ getConfig(() => {
 
         // render the error page
         res.status(err.status || 500)
+        res.redirect('/500')
     })
 
     const port = 6600

@@ -47,10 +47,12 @@ app.use((req, res, next) => {
 // TODO user login middleware
 
 // routers
+import appRouter from '../routers/app'
 import auth from '../routers/auth'
 import home from '../routers/home'
 import faq from '../routers/faq'
 
+app.use('/', appRouter)
 app.use('/', auth)
 app.use('/', home)
 app.use('/', faq)

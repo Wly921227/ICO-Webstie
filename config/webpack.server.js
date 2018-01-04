@@ -21,7 +21,7 @@ const config = {
         path: path.resolve(__dirname, `../dist/ico/server`),
         filename: '[name].js',
         chunkFilename: 'js/[name].js',
-        publicPath: '/ico/'
+        publicPath: '/public/'
     },
     target: 'node',
     node: {

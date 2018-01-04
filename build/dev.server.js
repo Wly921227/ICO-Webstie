@@ -24,7 +24,7 @@ require('css-modules-require-hook')({
 
 // Image require hook
 require('asset-require-hook')({
-    name: '/ico/images/[name].[hash:8].[ext]',
+    name: '/public/images/[name].[hash:8].[ext]',
     extensions: ['jpg', 'jpeg', 'png', 'gif', 'webp'],
     limit: 8192
 })

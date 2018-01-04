@@ -59,5 +59,6 @@ module.exports = [
     getHtmlPlugin('auth'),
     getHtmlPlugin('authRegister'),
     getHtmlPlugin('home'),
-    getHtmlPlugin('faq')
+    getHtmlPlugin('faq'),
+    getHtmlPlugin('404')
 ]
