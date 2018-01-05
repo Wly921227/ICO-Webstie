@@ -1,3 +1,3 @@
 export default {
-    defaultLoc: 'en_US'
+    defaultLoc: 'zh_TW'
 }

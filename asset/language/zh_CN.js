@@ -1,8 +1,16 @@
 import country from './country_zh'
+
 import advantageImg1 from '../common/images/resource/advantage-1.png'
 import advantageImg2 from '../common/images/resource/advantage-2.png'
 import advantageImg3 from '../common/images/resource/advantage-3.png'
 import advantageImg4 from '../common/images/resource/advantage-4.png'
+
+import coverageImg1 from '../common/images/resource/pic_chinadaily.jpg'
+import coverageImg2 from '../common/images/resource/pic_xinjingbao.jpg'
+import coverageImg3 from '../common/images/resource/pic_jingjiguanchabao.jpg'
+import coverageImg4 from '../common/images/resource/pic_zhongxinwang.jpg'
+import coverageImg5 from '../common/images/resource/pic_zhongguoqiyejia.jpg'
+import coverageImg6 from '../common/images/resource/pic_xiaofanzhuo.jpg'
 
 export default {
     global: {
@@ -103,6 +111,38 @@ Yee 将是一个基于区块链的通讯基础设施及去中心化的社交生�
                 title: '开放的合作生态圈',
                 img: advantageImg4,
                 desc: '全球用户数超过1亿的合作伙伴超过10家。'
+            }
+        ],
+        coverages: [
+            {
+                title: 'App that wants to outshine WeChat',
+                img: coverageImg1,
+                link: 'http://www.chinadaily.com.cn/newsrepublic/2016-10/20/content_27124893.htm'
+            },
+            {
+                title: 'YeeCall：路痴老婆引发的创业',
+                img: coverageImg2,
+                link: 'http://epaper.bjnews.com.cn/html/2015-05/28/content_579189.htm?div=-1'
+            },
+            {
+                title: '张磊：三次创业 三种风景',
+                img: coverageImg3,
+                link: 'http://www.eeo.com.cn/2016/0415/284968.shtml'
+            },
+            {
+                title: '創業者首部紀錄片首映 李開復：創業者是最偉大的人',
+                img: coverageImg4,
+                link: 'https://www.xcnnews.com/kj/1424496.html'
+            },
+            {
+                title: '从中国复制到全世界，创业者们的全球征战之路',
+                img: coverageImg5,
+                link: 'http://tech.sina.com.cn/it/2017-03-28/doc-ifycstww1556802.shtml'
+            },
+            {
+                title: 'YeeCall创始人张磊：出海创业不要说的天花乱坠，搭建模式闭环最重要',
+                img: coverageImg6,
+                link: 'http://www.xfz.cn/post/1918.html'
             }
         ],
         whitePaper: 'https://ysubcdn.gl.yeecall.com/yee/white-paper/Yee%E9%A1%B9%E7%9B%AE%E7%99%BD%E7%9A%AE%E4%B9%A6_%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E4%BA%91%E9%80%9A%E8%AE%AF%E7%BD%91%E7%BB%9C%E5%8F%8A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E7%A4%BE%E4%BA%A4%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9F_%E7%AE%80%E4%B8%AD%E7%BF%BB%E8%AF%91%E7%89%88V1.0.1.pdf',

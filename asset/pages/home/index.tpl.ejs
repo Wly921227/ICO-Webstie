@@ -1,5 +1,6 @@
 <div class="main <%- loc %>">
     <section id="index" class="section-1">
+        <div class="canvas-wonder"></div>
         <div class="warp-main">
             <div class="big-logo">
                 <img src="<%- images.logoBigImg %>">
@@ -94,7 +95,7 @@
                         <div class="cover">
                             <img src="<%- images.videoImg %>">
                         </div>
-                        <div class="play-icon"><img src="<%- images.playIcon %>"></div>
+                        <!--<div class="play-icon"><img src="<%- images.playIcon %>"></div>-->
                     </div>
                 </div>
             </div>
@@ -198,61 +199,22 @@
                 <!-- padding: 20px; -->
                 <!-- img size: height: 40px, width: auto -->
                 <ul>
+                    <% language.coverages.forEach(value => { %>
                     <li class="coverage-item">
                         <div class="coverage">
                             <div class="coverage-img">
-                                <img src="<%- images.coverageImg %>">
+                                <a href="<%- value.link %>" target="_blank">
+                                    <img src="<%- value.img %>">
+                                </a>
                             </div>
-                            <div class="coverage-title text">
-                                On your side: YEE - a decentralised
-                                ecosystem for immigrants.
-                            </div>
+                            <a href="<%- value.link %>" class="coverage-title">
+                                <div class="text">
+                                    <%- value.title %>
+                                </div>
+                            </a>
                         </div>
                     </li>
-                    <li class="coverage-item">
-                        <div class="coverage">
-                            <div class="coverage-img">
-                                <img src="<%- images.coverageImg %>">
-                            </div>
-                            <div class="coverage-title text">
-                                On your side: YEE - a decentralised
-                                ecosystem for immigrants.
-                            </div>
-                        </div>
-                    </li>
-                    <li class="coverage-item">
-                        <div class="coverage">
-                            <div class="coverage-img">
-                                <img src="<%- images.coverageImg %>">
-                            </div>
-                            <div class="coverage-title text">
-                                On your side: YEE - a decentralised
-                                ecosystem for immigrants.
-                            </div>
-                        </div>
-                    </li>
-                    <li class="coverage-item">
-                        <div class="coverage">
-                            <div class="coverage-img">
-                                <img src="<%- images.coverageImg %>">
-                            </div>
-                            <div class="coverage-title text">
-                                On your side: YEE - a decentralised
-                                ecosystem for immigrants.
-                            </div>
-                        </div>
-                    </li>
-                    <li class="coverage-item">
-                        <div class="coverage">
-                            <div class="coverage-img">
-                                <img src="<%- images.coverageImg %>">
-                            </div>
-                            <div class="coverage-title text">
-                                On your side: YEE - a decentralised
-                                ecosystem for immigrants.
-                            </div>
-                        </div>
-                    </li>
+                    <% }) %>
                 </ul>
             </div>
         </div>

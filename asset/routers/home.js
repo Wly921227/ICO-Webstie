@@ -8,10 +8,7 @@ import logoBigImg from '../common/images/home/logo-big.png'
 import playIcon from '../common/images/home/play-icon.png'
 
 // resource
-import binanceImg from '../common/images/resource/binance.png'
-import videoImg from '../common/images/resource/video-cover.png'
-import coverageImg from '../common/images/resource/coverage.png'
-import userImageImg from '../common/images/resource/user-image.png'
+import videoImg from '../common/images/resource/pic_whatsyee.jpg'
 
 const homeRouter = new Router()
 const log = logger('home')
@@ -20,10 +17,7 @@ const images = {
     logoBigImg,
     playIcon,
     // resource
-    coverageImg,
-    binanceImg,
-    videoImg,
-    userImageImg
+    videoImg
 }
 
 homeRouter.get('/home', async (req, res) => {

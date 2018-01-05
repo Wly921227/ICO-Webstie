@@ -29,9 +29,9 @@ const tools = {
         } else if (locCode.indexOf('zh') > -1) {
             return 'zh_TW'
         } else if (locCode.indexOf('ar') > -1) {
-            return 'ar_SA'
+            return 'zh_TW'
         } else {
-            return 'en_US'
+            return constants.defaultLoc
         }
     },
     getLanguage (loc, page) {
