@@ -16,7 +16,6 @@ export default {
     global: {
         country,
         locCode: [
-//            {code: 'en_US', name: 'English'},
             {code: 'zh_CN', name: '简体中文'},
             {code: 'zh_TW', name: '繁体中文'}
         ]
@@ -67,23 +66,27 @@ export default {
             verify: 'Invalid verify code'
         }
     },
+    locCode: [
+        {code: 'zh_CN', name: '简体中文'},
+        {code: 'zh_TW', name: '繁体中文'}
+    ],
     home: {
-        title: '首页',
-        desc1: 'Yee - A Decentralised Ecosystem for Immigrants',
-        desc2: 'This is where we brag about something amazing about us.',
+        title: 'Yee|A Decentralised Ecosystem for IM ',
+        desc1: 'Yee - 基于区块链的云通讯网络<br>及去中心化的社交生态系统',
+        desc2: 'Yee 打造无国界通讯体系!',
         total: 'Amount raised so far: $',
         buy: 'Buy your tokens now',
-        project: 'Project White Paper',
+        project: '白皮书',
         technical: 'Technical White Paper',
         sectionTitle1: 'YEE FOUND ON THESE EXCHANGES',
         sectionTitle2: 'TV COVERAGE',
-        sectionTitle3: 'NEWS COVERAGE',
-        sectionTitle4: 'WHAT IS YEE',
-        sectionTitle5: 'OUR ADVANTAGES',
-        sectionTitle6: 'MILESTONES',
-        sectionTitle7: 'FREQUENTLY ASKED QUESTIONS',
-        sectionTitle8: 'YEE TEAM',
-        sectionTitle9: 'YEE ADVISORS',
+        sectionTitle3: '新闻报导',
+        sectionTitle4: 'YEE 源起',
+        sectionTitle5: '我们的优势',
+        sectionTitle6: '里程碑',
+        sectionTitle7: '与我们联系',
+        sectionTitle8: 'YEE 核心团队',
+        sectionTitle9: 'YEE 谘询顾问',
         sectionTitle10: 'YEE partners & collaborators',
         sectionTitle11: 'YEE partners & collaborators',
         whatIsYee: `基于长达 10 年的通讯技术实践、过去三年对 YeeCall 开发和运营的理解，以及区块链技术对现有移动互联网技术和产品形态可能产生革命性创新的洞见。
@@ -115,7 +118,7 @@ Yee 将是一个基于区块链的通讯基础设施及去中心化的社交生�
         ],
         coverages: [
             {
-                title: 'App that wants to outshine WeChat',
+                title: '超越微信, 打造顶级出海通讯应用YeeCall',
                 img: coverageImg1,
                 link: 'http://www.chinadaily.com.cn/newsrepublic/2016-10/20/content_27124893.htm'
             },
@@ -130,7 +133,7 @@ Yee 将是一个基于区块链的通讯基础设施及去中心化的社交生�
                 link: 'http://www.eeo.com.cn/2016/0415/284968.shtml'
             },
             {
-                title: '創業者首部紀錄片首映 李開復：創業者是最偉大的人',
+                title: '创业者首部纪录片首映 李开复：创业者是最伟大的人',
                 img: coverageImg4,
                 link: 'https://www.xcnnews.com/kj/1424496.html'
             },
@@ -145,8 +148,8 @@ Yee 将是一个基于区块链的通讯基础设施及去中心化的社交生�
                 link: 'http://www.xfz.cn/post/1918.html'
             }
         ],
-        whitePaper: 'https://ysubcdn.gl.yeecall.com/yee/white-paper/Yee%E9%A1%B9%E7%9B%AE%E7%99%BD%E7%9A%AE%E4%B9%A6_%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E4%BA%91%E9%80%9A%E8%AE%AF%E7%BD%91%E7%BB%9C%E5%8F%8A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E7%A4%BE%E4%BA%A4%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9F_%E7%AE%80%E4%B8%AD%E7%BF%BB%E8%AF%91%E7%89%88V1.0.1.pdf',
-        whitePaperName: 'Yee项目白皮书_基于区块链的云通讯网络及去中心化的社交生态系统_简中翻译版V1.0.1.pdf'
+        whitePaper: 'https://ysubcdn.gl.yeecall.com/yee/white-paper/Yee%E2%80%94%E2%80%94%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E4%BA%91%E9%80%9A%E8%AE%AF%E7%BD%91%E7%BB%9C%E5%8F%8A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E7%A4%BE%E4%BA%A4%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9FV1.11.pdf',
+        whitePaperName: 'Yee——基于区块链的云通讯网络及去中心化的社交生态系统.pdf'
     },
     faq: {
         title: 'FAQ',
@@ -169,7 +172,7 @@ Yee 将是一个基于区块链的通讯基础设施及去中心化的社交生�
     header: {
         title: 'YEE',
         login: '登录',
-        language: '语言',
+        language: '简体中文',
         nav: [
             {
                 path: 'home#index',
@@ -177,20 +180,20 @@ Yee 将是一个基于区块链的通讯基础设施及去中心化的社交生�
             },
             {
                 path: 'home#yee',
-                name: 'WHAT IS YEE'
+                name: '源起'
             },
             {
                 path: 'home#advantages',
-                name: 'OUR ADVANTAGES'
+                name: '优势'
             },
             {
                 path: 'home#coverage',
-                name: 'NEWS COVERAGE'
+                name: '新闻'
             }
         ]
     },
     footer: {
-        copyright: 'Copyright © 2017 CyberMiles Foundation Ltd. All rights reserved.',
+        copyright: 'Copyright © 2017 Yee Foundation Ltd. All rights reserved.',
         terms: 'Privacy & Terms'
     }
 }

@@ -145,8 +145,8 @@ Yee 将是一个基于区块链的通讯基础设施及去中心化的社交生�
                 link: 'http://www.xfz.cn/post/1918.html'
             }
         ],
-        whitePaper: 'https://ysubcdn.gl.yeecall.com/yee/white-paper/Yee%E9%A1%B9%E7%9B%AE%E7%99%BD%E7%9A%AE%E4%B9%A6_%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E4%BA%91%E9%80%9A%E8%AE%AF%E7%BD%91%E7%BB%9C%E5%8F%8A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E7%A4%BE%E4%BA%A4%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9F_%E7%AE%80%E4%B8%AD%E7%BF%BB%E8%AF%91%E7%89%88V1.0.1.pdf',
-        whitePaperName: 'Yee项目白皮书_基于区块链的云通讯网络及去中心化的社交生态系统_简中翻译版V1.0.1.pdf'
+        whitePaper: 'https://ysubcdn.gl.yeecall.com/yee/white-paper/Yee%E2%80%94%E2%80%94%E5%9F%BA%E6%96%BC%E5%8D%80%E5%A1%8A%E9%8F%88%E7%9A%84%E9%9B%B2%E7%AB%AF%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E5%8F%8A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E7%A4%BE%E4%BA%A4%E7%94%9F%E6%85%8B%E7%B3%BB%E7%B5%B1V1.11%E7%B9%81%E9%AB%94.pdf',
+        whitePaperName: 'Yee——基於區塊鏈的雲端通訊網路及去中心化的社交生態系統.pdf'
     },
     faq: {
         title: 'FAQ',
