@@ -1,12 +1,16 @@
 import country from './country_en'
-import userImageImg from '../common/images/resource/user-image.png'
+import advantageImg1 from '../common/images/resource/advantage-1.png'
+import advantageImg2 from '../common/images/resource/advantage-2.png'
+import advantageImg3 from '../common/images/resource/advantage-3.png'
+import advantageImg4 from '../common/images/resource/advantage-4.png'
 
 export default {
     global: {
         country,
         locCode: [
-            {code: 'en_US', name: 'English'},
-            {code: 'zh_CN', name: 'Chinese'}
+//            {code: 'en_US', name: 'English'},
+            {code: 'zh_CN', name: '简体中文'},
+            {code: 'zh_TW', name: '繁体中文'}
         ]
     },
     auth: {
@@ -82,25 +86,27 @@ Yee 将是一个基于区块链的通讯基础设施及去中心化的社交生�
         advantages: [
             {
                 title: '通讯网络覆盖全球',
-                img: userImageImg,
+                img: advantageImg1,
                 desc: 'YeeCall 已经建立了一张覆盖全球 227 个国家、1000 多家运营商的通讯网络，拥有 5 个数据中心、400 多个中继节点，70% 的流量都通过 P2P 模式高效传输，目前这张网络已经向 IOT 兼容网络演进；'
             },
             {
                 title: '全球3000万用户',
-                img: userImageImg,
+                img: advantageImg2,
                 desc: 'YeeCall 拥有超过 3000 万的注册用户，这些用户分布在东南亚、欧美、印度和中东地区，已经形成了一个熟人为主的社交网络；'
             },
             {
                 title: '团队经验、技术储备丰富',
-                img: userImageImg,
+                img: advantageImg3,
                 desc: '团队在通讯领域有 10 年以上技术积累，在人工智能、区块链等领域也有 3 年以上的技术储备；在全球运营过 3 个超过亿级用户量的产品；'
             },
             {
                 title: '开放的合作生态圈',
-                img: userImageImg,
-                desc: '全球用户数超过1亿的合作伙伴超过10家'
+                img: advantageImg4,
+                desc: '全球用户数超过1亿的合作伙伴超过10家。'
             }
-        ]
+        ],
+        whitePaper: 'https://ysubcdn.gl.yeecall.com/yee/white-paper/Yee%E9%A1%B9%E7%9B%AE%E7%99%BD%E7%9A%AE%E4%B9%A6_%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E4%BA%91%E9%80%9A%E8%AE%AF%E7%BD%91%E7%BB%9C%E5%8F%8A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E7%A4%BE%E4%BA%A4%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9F_%E7%AE%80%E4%B8%AD%E7%BF%BB%E8%AF%91%E7%89%88V1.0.1.pdf',
+        whitePaperName: 'Yee项目白皮书_基于区块链的云通讯网络及去中心化的社交生态系统_简中翻译版V1.0.1.pdf'
     },
     faq: {
         title: 'FAQ',

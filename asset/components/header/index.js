@@ -37,4 +37,36 @@ $(document).on('scroll', function (e) {
     }
 })
 
+// 锚点滚动
+let interval = 0
+const scrollPage = (top, time) => {
+    clearInterval(interval)
+    const intervalTime = 20
+    const s = time / intervalTime
+    const scrollTop = window.pageYOffset
+        || document.documentElement.scrollTop
+        || document.body.scrollTop
+        || 0
+    let d = (top - scrollTop) / s
+    let i = 0
+    interval = setInterval(() => {
+        if (i <= s) {
+            window.scrollTo(0, d * i + scrollTop)
+            i++
+        } else {
+            clearInterval(interval)
+        }
+    }, intervalTime)
+}
+
+$('.header .nav a').on('click', function (e) {
+    e.preventDefault()
+    const $this = $(this)
+    const href = $this.attr('href')
+    const id = href.split('#')[1] || 'index'
+    const top = $(`#${id}`).offset().top
+    scrollPage(top, 300)
+    console.log(id)
+})
+
 setLanguageListSize()

@@ -1,64 +1,9 @@
-import country from './country_zh'
-import advantageImg1 from '../common/images/resource/advantage-1.png'
-import advantageImg2 from '../common/images/resource/advantage-2.png'
-import advantageImg3 from '../common/images/resource/advantage-3.png'
-import advantageImg4 from '../common/images/resource/advantage-4.png'
-
 export default {
-    global: {
-        country,
-        locCode: [
-//            {code: 'en_US', name: 'English'},
-            {code: 'zh_CN', name: '简体中文'},
-            {code: 'zh_TW', name: '繁体中文'}
-        ]
-    },
-    auth: {
-        title: '用户验证',
-        next: '下一步',
-        statement: 'By clicking ‘get started’, you agree to YeeCall’s',
-        terms: 'Term of Use and Privacy Policy.',
-        verifyNumber: 'Verify number',
-        verifyTip: 'Verification code sent to',
-        verifyBtn: 'VERIFY',
-        resend: 'RESEND VERIFICATION CODE',
-        enterPassword: 'Enter Password',
-        forget: 'FORGET PASSWORD',
-        start: 'GET STARTED'
-    },
-    authRegister: {
-        title: 'Register',
-        welcome: 'Welcome',
-        refresh: 'No clear',
-        verify: 'Verify',
-        email: 'Email',
-        verifyCode: 'Image verification',
-        emailCode: 'Email Code',
-        password: 'Enter password (6-16 numbers and characters)',
-        rePassword: 'Confirm password',
-        submit: 'Sign Up',
-        dialogTitle: 'Get YEE Token',
-        dialogDesc: 'Please read the YEE White Paper and be aware of the Pre-Sale details, confirm the conditions below to proceed the subscription.',
-        dialogOption: [
-            {
-                key: 0,
-                value: 'I HAVE read, understood and agreed the terms of Pre-Sale, been aware of the risk of the investment, and agreed the Exceptions Clause.'
-            },
-            {
-                key: 1,
-                value: 'I am NOT a U.S. citizen, nor resident, nor entity, nor on behalf of a U.S. citizen.'
-            },
-            {
-                key: 2,
-                value: 'I am NOT a South Korean citizen, nor resident, nor entity, nor citizen of Mainland China, nor on behalf of a citizen of South Korea or Mainland China.'
-            }
-        ],
-        button: 'Continue',
-        invalid: {
-            emial: 'Invalid email address',
-            verify: 'Invalid verify code'
-        }
-    },
+    locCode: [
+        {code: 'zh_CN', name: '简体中文'},
+        {code: 'zh_TW', name: '繁体中文'}
+    ],
+
     home: {
         title: '首页',
         desc1: 'Yee - A Decentralised Ecosystem for Immigrants',
@@ -108,24 +53,7 @@ Yee 将是一个基于区块链的通讯基础设施及去中心化的社交生�
         whitePaper: 'https://ysubcdn.gl.yeecall.com/yee/white-paper/Yee%E9%A1%B9%E7%9B%AE%E7%99%BD%E7%9A%AE%E4%B9%A6_%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E4%BA%91%E9%80%9A%E8%AE%AF%E7%BD%91%E7%BB%9C%E5%8F%8A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E7%A4%BE%E4%BA%A4%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9F_%E7%AE%80%E4%B8%AD%E7%BF%BB%E8%AF%91%E7%89%88V1.0.1.pdf',
         whitePaperName: 'Yee项目白皮书_基于区块链的云通讯网络及去中心化的社交生态系统_简中翻译版V1.0.1.pdf'
     },
-    faq: {
-        title: 'FAQ',
-        questions: [
-            {
-                title: 'What will I need to do to participate in the CyberMiles Token Sale?',
-                answer: '5miles comprises of team members with extensive experience from leading internet companies, e-commerce platforms, and financial services companies from 5 different countries. For the past three years, the team has applied their expertise to build a successful marketplace, which has become one of the leading shopping apps in the US, generating over USD 3 billion of annual transaction value.'
-            },
-            {
-                title: 'How are the key dates related to the CyberMiles Token Sale?',
-                answer: '5miles comprises of team members with extensive experience from leading internet companies, e-commerce platforms, and financial services companies from 5 different countries. For the past three years, the team has applied their expertise to build a successful marketplace, which has become one of the leading shopping apps in the US, generating over USD 3 billion of annual transaction value.'
-            },
-            {
-                title: 'Can I use an ETH address different with registration to join CyberMiles Token Sale?',
-                answer: '5miles comprises of team members with extensive experience from leading internet companies, e-commerce platforms, and financial services companies from 5 different countries. For the past three years, the team has applied their expertise to build a successful marketplace, which has become one of the leading shopping apps in the US, generating over USD 3 billion of annual transaction value.'
-            }
-        ]
-    },
-    // 组件
+
     header: {
         title: 'YEE',
         login: '登录',
@@ -149,6 +77,7 @@ Yee 将是一个基于区块链的通讯基础设施及去中心化的社交生�
             }
         ]
     },
+
     footer: {
         copyright: 'Copyright © 2017 CyberMiles Foundation Ltd. All rights reserved.',
         terms: 'Privacy & Terms'
