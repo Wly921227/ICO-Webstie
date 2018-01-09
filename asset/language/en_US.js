@@ -16,15 +16,15 @@ export default {
     global: {
         country,
         locCode: [
-//            {code: 'en_US', name: 'English'},
+            {code: 'en_US', name: 'English'},
             {code: 'zh_CN', name: '简体中文'},
             {code: 'zh_TW', name: '繁体中文'}
         ]
     },
     auth: {
-        title: 'auth',
-        next: 'NEXT',
-        statement: 'By clicking ‘get started’, you agree to YeeCall’s',
+        title: 'Verify',
+        next: 'Next',
+        statement: 'By choosing ‘get started’, you agree to YeeCall’s',
         terms: 'Term of Use and Privacy Policy.',
         verifyNumber: 'Verify number',
         verifyTip: 'Verification code sent to',
@@ -35,9 +35,9 @@ export default {
         start: 'GET STARTED'
     },
     authRegister: {
-        title: 'Register',
+        title: 'Sign Up',
         welcome: 'Welcome',
-        refresh: 'No clear',
+        refresh: 'Not clear',
         verify: 'Verify',
         email: 'Email',
         verifyCode: 'Image verification',
@@ -67,86 +67,93 @@ export default {
             verify: 'Invalid verify code'
         }
     },
+    locCode: [
+        {code: 'zh_CN', name: '简体中文'},
+        {code: 'zh_TW', name: '繁体中文'}
+    ],
     home: {
-        title: 'Home Page',
-        desc1: 'Yee - A Decentralised Ecosystem for Immigrants',
-        desc2: 'This is where we brag about something amazing about us.',
+        title: 'Yee|A Decentralized Ecosystem for IM ',
+        desc1: 'Yee - A blockchian-based cloud communication network<br>and decentralized social ecosystem',
+        desc2: 'Yee builds communication system beyond borders',
         total: 'Amount raised so far: $',
         buy: 'Buy your tokens now',
-        project: 'Project White Paper',
+        project: 'White Paper',
         technical: 'Technical White Paper',
         sectionTitle1: 'YEE FOUND ON THESE EXCHANGES',
         sectionTitle2: 'TV COVERAGE',
-        sectionTitle3: 'NEWS COVERAGE',
-        sectionTitle4: 'WHAT IS YEE',
-        sectionTitle5: 'OUR ADVANTAGES',
-        sectionTitle6: 'MILESTONES',
-        sectionTitle7: 'FREQUENTLY ASKED QUESTIONS',
-        sectionTitle8: 'YEE TEAM',
-        sectionTitle9: 'YEE ADVISORS',
-        sectionTitle10: 'YEE partners & collaborators',
-        sectionTitle11: 'YEE partners & collaborators',
-        whatIsYee: `基于长达 10 年的通讯技术实践、过去三年对 YeeCall 开发和运营的理解，以及区块链技术对现有移动互联网技术和产品形态可能产生革命性创新的洞见。
-我们力图搭建一套基于以太坊的高效、可靠的支持点对点、群组、直播、 IOT 的分布式云通讯网络 YeeNet，并在此基础上：
-<ul><li class="small">开发一个支持点对点及群组的即时通讯应用 YeeCall；</li><li class="small">搭建一套无摩擦的、支持智能合约的支付设施 YeeWallet；</li><li class="small">支持网页开发套件，便于开发者接入 YeeNet、YeeCall 和 YeeWallet，建立丰富的 DApp Store - YeeStore；</li></ul>
-我们将 YeeNet、YeeCall、YeeWallet、YeeStore 这一套完整的框架定义为 Yee。
-Yee 将是一个基于区块链的通讯基础设施及去中心化的社交生态系统。`,
+        sectionTitle3: 'News Report',
+        sectionTitle4: 'YEE Background',
+        sectionTitle5: 'Our Strength',
+        sectionTitle6: 'Milestone',
+        sectionTitle7: 'Contact Us',
+        sectionTitle8: 'YEE Core Team',
+        sectionTitle9: 'YEE Consulting',
+        sectionTitle10: 'YEE Partners & Collaborators',
+        sectionTitle11: 'YEE Partners & Collaborators',
+        whatIsYee: `Our company has 10 years experience applying communication technology to solve real-world problems, 3 years experience developing and marketing YeeCall app and the revolutionary insight of how blockchain technology could change current mobile internet technology and products. Based on Ethereum,
+we build an efficient distributed cloud-based communication system called YeeNet, which support stable 1 to 1 & group chat and calls, live streaming video and IoT communication. Base on YeeNet, we support 
+        <ul><li class="small">YeeCall, an instant messaging app supporting 1 to 1 & group chat and calls;
+        </li><li class="small">YeeWallet, a payment infrastructure, which supports friction-free commerce and smart contracts;
+        </li><li class="small">YeeStore, a web development suite for developers to easily add YeeNet, YeeCall, and YeeWallet to different Dapps；
+        </li></ul>
+We called the whole system Yee, which includes YeeNet, YeeCall, YeeWallet and YeeStore.
+Yee is a blockchain-based cloud communication network and decentralized social ecosystem.`,
         advantages: [
             {
-                title: '通讯网络覆盖全球',
+                title: 'Communication Network With Global Coverage',
                 img: advantageImg1,
-                desc: 'YeeCall 已经建立了一张覆盖全球 227 个国家、1000 多家运营商的通讯网络，拥有 5 个数据中心、400 多个中继节点，70% 的流量都通过 P2P 模式高效传输，目前这张网络已经向 IOT 兼容网络演进；'
+                desc: 'YeeCall already built a network covering 277 countries worldwide, 1000 operators’ networks and has 5 data centers and 400+ connecting nodes. 70% data transmit with high efficiency through P2P. YeeCall is working on IoT compatibility;'
             },
             {
-                title: '全球3000万用户',
+                title: '30 Million Users Worldwide',
                 img: advantageImg2,
-                desc: 'YeeCall 拥有超过 3000 万的注册用户，这些用户分布在东南亚、欧美、印度和中东地区，已经形成了一个熟人为主的社交网络；'
+                desc: 'YeeCall has more than 30 million registered users from Southeast Asia, Europe, North America, India and  Middle East. These users already created a social network based on acquaintances;'
             },
             {
-                title: '团队经验、技术储备丰富',
+                title: 'Strong Technological Capability and Rich Community Management Experience',
                 img: advantageImg3,
-                desc: '团队在通讯领域有 10 年以上技术积累，在人工智能、区块链等领域也有 3 年以上的技术储备；在全球运营过 3 个超过亿级用户量的产品；'
+                desc: 'The team has 10 years experience applying communication technology to solve real-world problems, 3-year experience in AI, Blockchain field etc. , and created more than 3 super apps with more than 100 million users worldwide;'
             },
             {
-                title: '开放的合作生态圈',
+                title: 'Open Partnership',
                 img: advantageImg4,
-                desc: '全球用户数超过1亿的合作伙伴超过10家。'
+                desc: 'More than 10 partners own more than 100 million users worldwide'
             }
         ],
         coverages: [
             {
-                title: 'App that wants to outshine WeChat',
+                title: 'Better Than WeChat, YeeCall, The Top IM App For Global Users',
                 img: coverageImg1,
                 link: 'http://www.chinadaily.com.cn/newsrepublic/2016-10/20/content_27124893.htm'
             },
             {
-                title: 'YeeCall：路痴老婆引发的创业',
+                title: 'YeeCall: Because His Wife Is Terrible With Directions',
                 img: coverageImg2,
                 link: 'http://epaper.bjnews.com.cn/html/2015-05/28/content_579189.htm?div=-1'
             },
             {
-                title: '张磊：三次创业 三种风景',
+                title: 'Zhang Lei: 3 Companies, 3 Journeys',
                 img: coverageImg3,
                 link: 'http://www.eeo.com.cn/2016/0415/284968.shtml'
             },
             {
-                title: '創業者首部紀錄片首映 李開復：創業者是最偉大的人',
+                title: 'Frist Chinese Entrepreneurs Documentary Kai-Fu Lee Entrepreneurs Are The Greatest',
                 img: coverageImg4,
                 link: 'https://www.xcnnews.com/kj/1424496.html'
             },
             {
-                title: '从中国复制到全世界，创业者们的全球征战之路',
+                title: 'Copy From China, Entrepreneurs Expand Their Business To The World',
                 img: coverageImg5,
                 link: 'http://tech.sina.com.cn/it/2017-03-28/doc-ifycstww1556802.shtml'
             },
             {
-                title: 'YeeCall创始人张磊：出海创业不要说的天花乱坠，搭建模式闭环最重要',
+                title: 'YeeCall CEO Zhang Lei: Healthy Ecosystem Is The Most Important For Business Expand To The World',
                 img: coverageImg6,
                 link: 'http://www.xfz.cn/post/1918.html'
             }
         ],
-        whitePaper: 'https://ysubcdn.gl.yeecall.com/yee/white-paper/Yee%E2%80%94%E2%80%94%E5%9F%BA%E6%96%BC%E5%8D%80%E5%A1%8A%E9%8F%88%E7%9A%84%E9%9B%B2%E7%AB%AF%E9%80%9A%E8%A8%8A%E7%B6%B2%E8%B7%AF%E5%8F%8A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E7%A4%BE%E4%BA%A4%E7%94%9F%E6%85%8B%E7%B3%BB%E7%B5%B1V1.11%E7%B9%81%E9%AB%94.pdf',
-        whitePaperName: 'Yee——基於區塊鏈的雲端通訊網路及去中心化的社交生態系統.pdf'
+        whitePaper: 'https://ysubcdn.gl.yeecall.com/yee/white-paper/Yee%E2%80%94%E2%80%94%E5%9F%BA%E4%BA%8E%E5%8C%BA%E5%9D%97%E9%93%BE%E7%9A%84%E4%BA%91%E9%80%9A%E8%AE%AF%E7%BD%91%E7%BB%9C%E5%8F%8A%E5%8E%BB%E4%B8%AD%E5%BF%83%E5%8C%96%E7%9A%84%E7%A4%BE%E4%BA%A4%E7%94%9F%E6%80%81%E7%B3%BB%E7%BB%9FV1.11.pdf',
+        whitePaperName: 'Yee——a blockchian-based cloud communication network and decentralized social ecosystem.pdf'
     },
     faq: {
         title: 'FAQ',
@@ -168,21 +175,29 @@ Yee 将是一个基于区块链的通讯基础设施及去中心化的社交生�
     // 组件
     header: {
         title: 'YEE',
-        login: 'Log in',
-        language: 'Language',
+        login: '	Sign In',
+        language: '简体中文',
         nav: [
             {
-                path: 'home',
-                name: 'HOME'
+                path: 'home#index',
+                name: 'Home'
             },
             {
-                path: 'faq',
-                name: 'FAQ'
+                path: 'home#yee',
+                name: 'Background'
+            },
+            {
+                path: 'home#advantages',
+                name: 'Our Strength'
+            },
+            {
+                path: 'home#coverage',
+                name: 'News'
             }
         ]
     },
     footer: {
-        copyright: 'Copyright © 2017 CyberMiles Foundation Ltd. All rights reserved.',
+        copyright: 'Copyright © 2017 Yee Foundation Ltd. All rights reserved.',
         terms: 'Privacy & Terms'
     }
 }

@@ -16,6 +16,7 @@ export default {
     global: {
         country,
         locCode: [
+            {code: 'en_US', name: 'English'},
             {code: 'zh_CN', name: '简体中文'},
             {code: 'zh_TW', name: '繁体中文'}
         ]
